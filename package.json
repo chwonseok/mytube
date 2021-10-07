@@ -2,15 +2,20 @@
   "name": "mytube",
   "version": "1.0.0",
   "description": "mytube, youtube cloning with fullstack skills",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chwonseok/mytube.git"
+  },
+  "scripts": {
+    "start": "node index.js"
   },
   "author": "chwonseok",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chwonseok/mytube/issues"
   },
-  "homepage": "https://github.com/chwonseok/mytube#readme"
+  "homepage": "https://github.com/chwonseok/mytube#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
