@@ -3,9 +3,25 @@ import express from 'express';
 const PORT = 4000;
 const app = express();
 
-app.get('/', () => console.log('going to home'));
+const loggerMdw = (req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  return next();
+};
 
-const listeningHandler = () =>
-  console.log(`server listening on http://localhost:${PORT}`);
+const homeHandler = (req, res) => {
+  // return res.end(); // request를 end 시키는 mth
+  return res.send('<h1>hey this is finished</h1>');
+};
 
-app.listen(PORT, listeningHandler);
+/*
+  use()는 global middleware를 만들어 줌(어느 url에서든 작동하는)
+  항상 get()전에 위치시켜야 함
+*/
+app.use(loggerMdw);
+
+app.get('/', homeHandler);
+
+const listeningController = () =>
+  console.log(`✅ server listening on http://localhost:${PORT} ✅`);
+
+app.listen(PORT, listeningController);
