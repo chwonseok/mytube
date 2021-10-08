@@ -19,7 +19,7 @@ const homeHandler = (req, res) => {
 */
 app.use(loggerMdw);
 
-app.get('/', homeHandler);
+app.get('/', homeHandler); // route는 '/' 즉 route이며 homeHandler는 handler
 
 const listeningController = () =>
   console.log(`✅ server listening on http://localhost:${PORT} ✅`);
