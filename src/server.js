@@ -11,11 +11,11 @@ const homeHandler = (req, res) => {
 };
 
 /*
-  * use() *
+  ** use()
   use()는 global middleware를 만들어 줌(어느 url에서든 작동하는)
   항상 get()전에 위치시켜야 함
 
-  * morgan() *
+  ** morgan()
   morgan()은 조금 더 정교한 logger함수, 즉 조금 더 상세한 정보를 return함
 */
 
