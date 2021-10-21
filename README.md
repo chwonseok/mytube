@@ -1,13 +1,15 @@
 # Mytube
 
-/ -> Home
-/join -> Join
-/login -> Login
-/search -> Search
+## Router
 
-/users/edit -> Edit user
-/users/delete -> Delete user
-
-/videos/watch -> Watch video
-/videos/delete -> Delete video
-/videos/comments -> Make a comment
+/ -> Home<br>
+/join -> Join<br>
+/login -> Login<br>
+/search -> Search<br>
+<br>
+/users/edit -> Edit user<br>
+/users/delete -> Delete user<br>
+<br>
+/videos/watch -> Watch video<br>
+/videos/delete -> Delete video<br>
+/videos/comments -> Make a comment<br>
